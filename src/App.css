@@ -1,38 +1,239 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.app__root {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.container {
+  width: 1024px;
+  display: block;
+  margin: 0 auto;
+  height: 100vh;
+  position: relative;
+}
+
+.hello__wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hello__hello {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 58px;
+
+  color: #6b83f2;
+}
+
+.hello__description {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 50px;
+
+  color: #6b83f2;
+}
+
+.hello__btn {
+  width: 192px;
+  height: 57px;
+  background-color: #6b83f2;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  position: absolute;
+  top: 19px;
+  right: 44px;
+  cursor: pointer;
+  transition: 0.5s all;
+  -webkit-box-shadow: 0px 1px 10px 3px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 1px 10px 3px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 1px 10px 3px rgba(34, 60, 80, 0.2);
+}
+
+.hello__btn:hover {
+  transform: scale(1.5);
+  color: #6b83f2;
+  background-color: #fff;
+}
+
+.hello__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 456px;
+}
+
+.autorization__input {
+  width: 269px;
+  height: 40px;
+  background: #ffffff;
+  border: 2px solid #6b83f2;
+  border-radius: 30px;
+  outline: none;
+  padding-left: 20px;
+  color: #6b83f2;
+  font-weight: 400;
+}
+
+.autorization__label {
+  font-weight: 700;
+  font-size: 16px;
+  color: #6b83f2;
+  transform: translateX(15px);
+}
+
+.autorization__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.autorization__img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.autorization__text {
+  height: 100vh;
+  transform: translateY(-10%);
+  /* transform: translateX(100px); */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.autorization__valid {
+  font-weight: 700;
+  font-size: 16px;
+  color: #f5697c;
+  transform: translateX(15px);
+}
+
+.answer__question {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #6b83f2;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.answer__btn {
+  width: 192px;
+  height: 57px;
+  background-color: #6b83f2;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+
+  cursor: pointer;
+  transition: 0.5s all;
+  -webkit-box-shadow: 0px 1px 10px 3px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 1px 10px 3px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 1px 10px 3px rgba(34, 60, 80, 0.2);
+
+  margin-top: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.answer__btn:hover {
+  transform: scale(1.5);
+  color: #6b83f2;
+  background-color: #fff;
+}
+
+.answers__wrapper {
+  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.answer__label {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  margin-left: 60px;
+  color: #6b83f2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.answer {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.answer__checkbox {
+  width: 30px;
+  height: 30px;
+}
+
+.ans_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answer__picture {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 139.5px;
+  height: 130px;
+}
+
+.results__result {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #6b83f2;
+}
+
+.results__correct {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #6b83f2;
+}
+
+.results__reaction {
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 39px;
+
+  color: #6b83f2;
+}
+.results__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.results__wrapper {
+  height: 100vh;
 }
